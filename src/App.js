@@ -6,7 +6,7 @@ import useFetch from './component/useFetch';
 import Diaries from './component/Diaries';
 import View from './component/View';
 import Add from './component/Add';
-import Update from './component/Update';
+import Update from './component/UpdateInfo';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
               <h1>Home</h1>
           </Route>
 
-          <Route path='/add' exact>
+          <Route path='/adduser' exact>
               <h1>Add</h1>
               <hr/>
               <Add  diaries={diaries} url={url} setDiaries={setDiaries}/>
@@ -44,7 +44,7 @@ function App() {
             <View diaries={diaries} />
           </Route>
           
-          <Route path='/update/:id' exact>
+          <Route path='/updateInfo/:id' exact>
             <h1>Update</h1>
             <hr/>
             <Update diaries={diaries} url={url} setDiaries={setDiaries}/>

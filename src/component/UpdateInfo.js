@@ -13,7 +13,7 @@ const Update = ({diaries,setDiaries,url}) => {
 
     const {id} = useParams();
 
-    const changeUser = (e)=>{
+    const updateUser = (e)=>{
         const name = e.target.name;
         const value = e.target.value;
         let diary={...newDiary,[name] : value};
@@ -54,21 +54,21 @@ const Update = ({diaries,setDiaries,url}) => {
             <form action="" onSubmit={onsubmit}>
             <div>
                     <label htmlFor="">Event</label>
-                    <input type="text" name='event' onChange={changeUser}/>
+                    <input type="text" name='event' onChange={updateeUser}/>
                 </div>
                 <br/><br/>
 
                 <div>
                     <label htmlFor="">Experience</label>
-                    <input type="text" name='experience' onChange={changeUser}/>
+                    <input type="text" name='experience' onChange={updateUser}/>
                 </div>
                 <div>
                     <label htmlFor="">Thought</label>
-                    <input type="text" name='thought' onChange={changeUser}/>
+                    <input type="text" name='thought' onChange={updateUser}/>
                 </div>
                 <div>
                     <label htmlFor="">Last Modification</label>
-                    <input type="date" name='last_modification' onChange={changeUser}/>
+                    <input type="date" name='last_modification' onChange={updateUser}/>
                 </div>
                 <br/><br/>
 
@@ -82,4 +82,4 @@ const Update = ({diaries,setDiaries,url}) => {
     )
 }
 
-export default Update
+export default UpdateInfo
