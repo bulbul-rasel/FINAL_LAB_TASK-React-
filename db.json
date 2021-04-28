@@ -1,19 +1,24 @@
+"event": "json-server",
+"experience": "json-server",
+"thought": "json-server",
+"last-modification": "json-server"
+"last_modification": "json-server"
+},
 {
-  "diary": [
-    {
-      "id": 1,
-      "event": "json-server",
-      "experience": "json-server",
-      "thought": "json-server",
-      "last-modification": "json-server"
-    },
-    {
-      "id": 2,
-      "event": "json-server",
-      "experience": "json-server",
-      "thought": "json-server",
-      "last-modification": "json-server"
-    }
-  ]
-  
+"id": 2,
+"event": "json-server",
+"experience": "json-server",
+"thought": "json-server",
+"last-modification": "json-server"
+"last_modification": "json-server"
+},
+{
+"id": 3,
+"event": "json-server",
+"experience": "json-server",
+"thought": "json-server",
+"last_modification": "json-server"
 }
+]
+
+} 
