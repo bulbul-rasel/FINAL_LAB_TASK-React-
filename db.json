@@ -1,0 +1,19 @@
+{
+  "diary": [
+    {
+      "id": 1,
+      "event": "json-server",
+      "experience": "json-server",
+      "thought": "json-server",
+      "last-modification": "json-server"
+    },
+    {
+      "id": 2,
+      "event": "json-server",
+      "experience": "json-server",
+      "thought": "json-server",
+      "last-modification": "json-server"
+    }
+  ]
+  
+}
