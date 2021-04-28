@@ -5,6 +5,8 @@ import {useState} from 'react'
 import useFetch from './component/useFetch';
 import Diaries from './component/Diaries';
 import View from './component/View';
+import Add from './component/Add';
+import Update from './component/Update';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
 
           <Route path='/add' exact>
               <h1>Add</h1>
+              <hr/>
+              <Add  diaries={diaries} url={url} setDiaries={setDiaries}/>
           </Route>
 
           <Route path='/diarylist' exact>
@@ -38,6 +42,12 @@ function App() {
             <h1>View</h1>
             <hr/>
             <View diaries={diaries} />
+          </Route>
+          
+          <Route path='/update/:id' exact>
+            <h1>Update</h1>
+            <hr/>
+            <Update diaries={diaries} url={url} setDiaries={setDiaries}/>
           </Route>
         </Switch>
       </Router>

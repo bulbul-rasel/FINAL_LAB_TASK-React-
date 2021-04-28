@@ -1,4 +1,3 @@
-  
 import {useEffect} from 'react'
 
 const useFetch = ({setDiaries,url}) => {
@@ -11,7 +10,7 @@ const useFetch = ({setDiaries,url}) => {
 
     useEffect(()=>{
         getDiaries()
-    },[])
+    },[url])
 }
 
 export default useFetch

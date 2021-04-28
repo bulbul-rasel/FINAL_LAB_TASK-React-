@@ -18,6 +18,7 @@ const View = ({diaries}) => {
             
             <h4>Last Modification: {diary.last_modification}</h4>
             <br/><br/>
+            <Link to={`/update/${id}`}><button style={{margin:'5px'}}>Edit</button></Link>
             <Link to='/'>Home</Link>
         </div>
     )
